@@ -31,7 +31,8 @@
           </div>
           <div class="row margin-top-10">
             <div class="col-xs-4 col-xs-offset-4 text-center">
-              <p [ngClass]="{'info-text':!isError,'error-text':isError}">{{ bookStatus }}</p>
+              <p [ngClass]="{'info-text':!isError,'error-text':isError}">
+                {{ bookStatus }}</p>
               <button [ngClass]="{'btn-danger':makeCancelButton,'btn-primary':!makeCancelButton}" class='btn' (click)='bookRideStart(selectedRide.id)'>
 						 	  {{ bookButtonText }}
               </button>

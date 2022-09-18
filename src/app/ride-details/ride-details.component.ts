@@ -6,6 +6,7 @@ import {
   Output,
   EventEmitter
 } from '@angular/core';
+import { Ride } from '../book-ride/Ride';
 
 @Component({
   selector: 'app-ride-details',
@@ -14,7 +15,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class RideDetailsComponent implements OnInit {
-  @Input() selectedRide: Object;
+  @Input() selectedRide: Ride;//Object;
   @Output() onBookRide = new EventEmitter<Object>();
 
   bookButtonText: string;

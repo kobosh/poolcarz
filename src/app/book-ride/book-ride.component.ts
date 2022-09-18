@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { RestService } from '../services/rest.service';
 import { AuthenticationService } from '../services/authentication.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-book-ride',

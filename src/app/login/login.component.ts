@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Login } from './Login';
 import { RestService } from '../services/rest.service';
 import { AuthenticationService } from '../services/authentication.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {//implements OnInit {
 
   login = new Login();
   users: any[];
